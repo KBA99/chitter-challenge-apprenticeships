@@ -1,10 +1,8 @@
 
 feature 'adding peeps' do
   scenario 'user can add peeps' do
-    visit ('/peeps')
-    click_on 'Add Peep'
+    visit ('/peeps/new')
 
-    #direct them to /peeps/new
     fill_in 'peep', with: "This is a new peep!"
     click_on 'Send Peep'
 
